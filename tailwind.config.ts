@@ -1,3 +1,4 @@
+import { colors } from './src/app/theme/colors'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -8,12 +9,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
+      colors,
+      boxShadow: {
+        "2xl": "0 4px 12px 0 rgba(139,153,169,0.24)"
+      }
+    }
   },
   plugins: [],
 }
